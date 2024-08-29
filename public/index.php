@@ -3,14 +3,14 @@
 // Configura la cabecera para respuestas JSON
 header('Content-Type: application/json');
 
-// Incluye archivos de configuración y clases
+
 require_once '../vendor/autoload.php';
 require_once '../config/config.php';
 require_once '../config/routes.php';
 require_once '../config/container.php';
-require_once '../Http/HttpException.php'; // Incluye la clase HttpException
+require_once '../Http/HttpException.php';
 
-use Exceptions\HttpException; // Usa la clase HttpException
+use Exceptions\HttpException; 
 
 // Configura el contenedor de servicios
 $container = require '../config/container.php';

@@ -68,7 +68,6 @@ class UserController
             $id
         );
 
-        // Llama al caso de uso para actualizar el usuario
         $result = $this->updateUserUseCase->execute($id, $updateUserDTO);
 
         return $result;

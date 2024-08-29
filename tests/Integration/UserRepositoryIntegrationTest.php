@@ -12,7 +12,7 @@ class UserRepositoryIntegrationTest extends TestCase
 
     protected function setUp(): void
     {
-        parent::setUp(); // Llama al método setUp de la clase base, si es necesario
+        parent::setUp();
 
         // Configuración de la base de datos en memoria
         $this->pdo = new PDO('sqlite::memory:');
@@ -24,7 +24,6 @@ class UserRepositoryIntegrationTest extends TestCase
             is_active BOOLEAN
         )");
 
-        // Inicializa el repositorio de usuarios con la conexión PDO
         $this->userRepository = new UserRepository($this->pdo);
     }
 

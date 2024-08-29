@@ -47,7 +47,6 @@ class UpdateUserUseCase
         $user->setIsActive($userDTO->getIsActive());
     }
 
-    // Guardar los cambios en el repositorio
     $this->userRepository->save($user);
 
         return ['status' => 'success', 'message' => 'User updated successfully'];

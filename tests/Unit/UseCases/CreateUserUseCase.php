@@ -21,7 +21,6 @@ class CreateUserUseCaseTest extends TestCase
         parent::setUp();
         // Crear un mock para UserRepositoryInterface
         $this->userRepositoryMock = $this->createMock(UserRepositoryInterface::class);
-        // Instanciar CreateUserUseCase con el mock
         $this->createUserUseCase = new CreateUserUseCase($this->userRepositoryMock);
     }
 
