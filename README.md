@@ -37,3 +37,22 @@ Este proyecto utiliza PHP y PostgreSQL en contenedores Docker. A continuación, 
     verifica el estatus del server
 
     http://localhost:8000/status
+
+
+5. **Url list**
+    base_url:http://localhost:8000
+
+    status:
+        base_url/status
+        get status server
+
+    user:
+        base_url/user
+        Get all
+        post create
+
+    user/{id}:
+        base_url/user/{id}
+        get GetById
+        put update
+        delete delete
